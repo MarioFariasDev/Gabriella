@@ -1,492 +1,98 @@
 const treinos = [
   {
-    "dia": "DIA 1 – PEITO + TRÍCEPS",
-    "tecnica": "Execução controlada + volume moderado",
-    "objetivo": "Hipertrofia progressiva e segura para iniciantes",
+    "dia": "DIA 1 – PEITO + TRÍCEPS + CORE (corrida fácil 20–28min)",
+    "tecnica": "Execução controlada, compostos pesados no início, corrida leve ao final",
+    "objetivo": "Hipertrofia e fortalecimento com estímulo aeróbico leve",
+    "corrida": {
+      "aquecimento": "5min caminhada rápida",
+      "bloco": [
+        { "semanas": "1–2", "protocolo": "1min corrida + 2min caminhada x8 (24min total)" },
+        { "semanas": "3–4", "protocolo": "2min corrida + 1min caminhada x8 (24min total)" },
+        { "semanas": "5–6", "protocolo": "3min corrida + 1min caminhada x8 (32min total)" },
+        { "semanas": "7–8", "protocolo": "Corrida contínua 20–28min" }
+      ],
+      "desaquecimento": "5min caminhada leve"
+    },
     "exercicios": [
-      {
-        "nome": "Supino reto com barra",
-        "series": "3",
-        "reps": "12",
-        "tecnica": "Cadência 2-1-2",
-        "obs": ""
-      },
-      {
-        "nome": "Crucifixo inclinado",
-        "series": "3",
-        "reps": "12",
-        "tecnica": "",
-        "obs": ""
-      },
-      {
-        "nome": "Tríceps pulley",
-        "series": "3",
-        "reps": "12",
-        "tecnica": "",
-        "obs": ""
-      },
-      {
-        "nome": "Mergulho em banco",
-        "series": "3",
-        "reps": "12",
-        "tecnica": "",
-        "obs": ""
-      }
+      { "nome": "Supino reto com barra", "series": "4", "reps": "6–8", "tecnica": "Cadência 2-0-1", "obs": "Foco força, descanso 2 min" },
+      { "nome": "Supino inclinado com halteres", "series": "3", "reps": "8–10", "tecnica": "", "obs": "" },
+      { "nome": "Crucifixo inclinado / crossover", "series": "3", "reps": "12–15", "tecnica": "", "obs": "Superset com pushdown" },
+      { "nome": "Tríceps pulley (barra ou corda)", "series": "3", "reps": "10–12", "tecnica": "", "obs": "" },
+      { "nome": "Mergulho entre bancos", "series": "3", "reps": "8–12", "tecnica": "", "obs": "" },
+      { "nome": "Prancha frontal", "series": "3", "reps": "40–60s", "tecnica": "", "obs": "Core" }
     ]
   },
   {
-    "dia": "DIA 2 – COSTAS + BÍCEPS",
-    "tecnica": "Execução controlada + volume moderado",
-    "objetivo": "Hipertrofia progressiva e segura para iniciantes",
+    "dia": "DIA 2 – PERNAS (dia pesado)",
+    "tecnica": "Execução controlada, foco em força",
+    "objetivo": "Fortalecimento e hipertrofia de membros inferiores",
     "exercicios": [
-      {
-        "nome": "Puxada frontal",
-        "series": "3",
-        "reps": "12",
-        "tecnica": "",
-        "obs": ""
-      },
-      {
-        "nome": "Remada baixa",
-        "series": "3",
-        "reps": "12",
-        "tecnica": "",
-        "obs": ""
-      },
-      {
-        "nome": "Rosca direta com barra",
-        "series": "3",
-        "reps": "12",
-        "tecnica": "",
-        "obs": ""
-      },
-      {
-        "nome": "Rosca alternada",
-        "series": "3",
-        "reps": "12",
-        "tecnica": "",
-        "obs": ""
-      }
+      { "nome": "Agachamento livre / smith", "series": "4", "reps": "5–6", "tecnica": "Cadência 2-0-1", "obs": "Descanso 2–3 min" },
+      { "nome": "Levantamento romeno", "series": "3", "reps": "6–8", "tecnica": "", "obs": "" },
+      { "nome": "Leg press", "series": "3", "reps": "10–12", "tecnica": "", "obs": "" },
+      { "nome": "Passada andando", "series": "3", "reps": "10–12 passos por perna", "tecnica": "", "obs": "" },
+      { "nome": "Elevação de quadril (hip thrust)", "series": "3", "reps": "8–10", "tecnica": "", "obs": "" },
+      { "nome": "Panturrilha em pé", "series": "4", "reps": "12–15", "tecnica": "", "obs": "" },
+      { "nome": "Abdominal oblíquo", "series": "3", "reps": "15–20", "tecnica": "", "obs": "" }
     ]
   },
   {
-    "dia": "DIA 3 – PERNAS",
-    "tecnica": "Execução controlada + volume moderado",
-    "objetivo": "Hipertrofia progressiva e segura para iniciantes",
+    "dia": "DIA 3 – COSTAS + BÍCEPS (corrida intervalada curta 25–30min)",
+    "tecnica": "Execução controlada, corrida intervalada após musculação",
+    "objetivo": "Fortalecimento do tronco e ganho de resistência",
+    "corrida": {
+      "aquecimento": "5min caminhada rápida",
+      "bloco": [
+        { "semanas": "1–2", "protocolo": "1min corrida + 1min caminhada x12 (24min total)" },
+        { "semanas": "3–4", "protocolo": "2min corrida + 1min caminhada x9 (27min total)" },
+        { "semanas": "5–6", "protocolo": "3min corrida + 1min caminhada x7 (28min total)" },
+        { "semanas": "7–8", "protocolo": "Corrida contínua 25–30min" }
+      ],
+      "desaquecimento": "5min caminhada leve"
+    },
     "exercicios": [
-      {
-        "nome": "Agachamento livre",
-        "series": "3",
-        "reps": "12",
-        "tecnica": "Cadência 2-1-2",
-        "obs": ""
-      },
-      {
-        "nome": "Cadeira extensora",
-        "series": "3",
-        "reps": "12",
-        "tecnica": "",
-        "obs": ""
-      },
-      {
-        "nome": "Mesa flexora",
-        "series": "3",
-        "reps": "12",
-        "tecnica": "",
-        "obs": ""
-      },
-      {
-        "nome": "Panturrilha em pé",
-        "series": "3",
-        "reps": "12",
-        "tecnica": "",
-        "obs": ""
-      }
+      { "nome": "Puxada frente / barra fixa assistida", "series": "4", "reps": "6–8", "tecnica": "", "obs": "" },
+      { "nome": "Remada curvada / unilateral", "series": "4", "reps": "8–10", "tecnica": "", "obs": "" },
+      { "nome": "Remada baixa / máquina", "series": "3", "reps": "10–12", "tecnica": "", "obs": "" },
+      { "nome": "Face pull", "series": "3", "reps": "12–15", "tecnica": "", "obs": "Saúde do ombro" },
+      { "nome": "Rosca direta", "series": "3", "reps": "8–10", "tecnica": "", "obs": "" },
+      { "nome": "Rosca martelo", "series": "2", "reps": "10–12", "tecnica": "", "obs": "" }
     ]
   },
   {
-    "dia": "DIA 4 – OMBROS + CORE",
-    "tecnica": "Execução controlada + volume moderado",
-    "objetivo": "Hipertrofia progressiva e segura para iniciantes",
+    "dia": "DIA 4 – PERNAS (dia volume/glúteo)",
+    "tecnica": "Execução controlada, foco em resistência muscular",
+    "objetivo": "Fortalecimento de glúteos e posterior de coxa",
     "exercicios": [
-      {
-        "nome": "Desenvolvimento halteres",
-        "series": "3",
-        "reps": "12",
-        "tecnica": "",
-        "obs": ""
-      },
-      {
-        "nome": "Elevação lateral",
-        "series": "3",
-        "reps": "12",
-        "tecnica": "",
-        "obs": ""
-      },
-      {
-        "nome": "Prancha frontal",
-        "series": "3",
-        "reps": "12",
-        "tecnica": "",
-        "obs": ""
-      },
-      {
-        "nome": "Abdominal bicicleta",
-        "series": "3",
-        "reps": "12",
-        "tecnica": "",
-        "obs": ""
-      }
+      { "nome": "Peso morto romeno leve", "series": "3", "reps": "8–10", "tecnica": "", "obs": "" },
+      { "nome": "Agachamento búlgaro / step-up", "series": "3", "reps": "8–10 por perna", "tecnica": "", "obs": "" },
+      { "nome": "Mesa flexora", "series": "3", "reps": "10–12", "tecnica": "", "obs": "" },
+      { "nome": "Adução/abdução máquina", "series": "3", "reps": "12–15", "tecnica": "", "obs": "" },
+      { "nome": "Ponte de glúteo unilateral", "series": "3", "reps": "10–12 por perna", "tecnica": "", "obs": "" },
+      { "nome": "Circuito metabólico final", "series": "3", "reps": "45s air squat + 30s mountain climber", "tecnica": "Circuito", "obs": "Descanso 30s entre exercícios" }
     ]
   },
   {
-    "dia": "DIA 5 – PEITO + TRÍCEPS",
-    "tecnica": "Execução controlada + volume moderado",
-    "objetivo": "Hipertrofia progressiva e segura para iniciantes",
+    "dia": "DIA 5 – OMBROS + CORE (corrida contínua moderada 30–38min)",
+    "tecnica": "Execução controlada, corrida moderada ao final",
+    "objetivo": "Fortalecimento do core e ganho de resistência aeróbica",
+    "corrida": {
+      "aquecimento": "5min caminhada rápida",
+      "bloco": [
+        { "semanas": "1–2", "protocolo": "Corrida contínua 15–20min" },
+        { "semanas": "3–4", "protocolo": "Corrida contínua 20–25min" },
+        { "semanas": "5–6", "protocolo": "Corrida contínua 25–30min" },
+        { "semanas": "7–8", "protocolo": "Corrida contínua 30–38min" }
+      ],
+      "desaquecimento": "5min caminhada leve"
+    },
     "exercicios": [
-      {
-        "nome": "Supino reto com barra",
-        "series": "3",
-        "reps": "12",
-        "tecnica": "Cadência 2-1-2",
-        "obs": ""
-      },
-      {
-        "nome": "Crucifixo inclinado",
-        "series": "3",
-        "reps": "12",
-        "tecnica": "",
-        "obs": ""
-      },
-      {
-        "nome": "Tríceps pulley",
-        "series": "3",
-        "reps": "12",
-        "tecnica": "",
-        "obs": ""
-      },
-      {
-        "nome": "Mergulho em banco",
-        "series": "3",
-        "reps": "12",
-        "tecnica": "",
-        "obs": ""
-      }
-    ]
-  },
-  {
-    "dia": "DIA 6 – COSTAS + BÍCEPS",
-    "tecnica": "Execução controlada + volume moderado",
-    "objetivo": "Hipertrofia progressiva e segura para iniciantes",
-    "exercicios": [
-      {
-        "nome": "Puxada frontal",
-        "series": "3",
-        "reps": "12",
-        "tecnica": "",
-        "obs": ""
-      },
-      {
-        "nome": "Remada baixa",
-        "series": "3",
-        "reps": "12",
-        "tecnica": "",
-        "obs": ""
-      },
-      {
-        "nome": "Rosca direta com barra",
-        "series": "3",
-        "reps": "12",
-        "tecnica": "",
-        "obs": ""
-      },
-      {
-        "nome": "Rosca alternada",
-        "series": "3",
-        "reps": "12",
-        "tecnica": "",
-        "obs": ""
-      }
-    ]
-  },
-  {
-    "dia": "DIA 7 – PERNAS",
-    "tecnica": "Execução controlada + volume moderado",
-    "objetivo": "Hipertrofia progressiva e segura para iniciantes",
-    "exercicios": [
-      {
-        "nome": "Agachamento livre",
-        "series": "3",
-        "reps": "12",
-        "tecnica": "Cadência 2-1-2",
-        "obs": ""
-      },
-      {
-        "nome": "Cadeira extensora",
-        "series": "3",
-        "reps": "12",
-        "tecnica": "",
-        "obs": ""
-      },
-      {
-        "nome": "Mesa flexora",
-        "series": "3",
-        "reps": "12",
-        "tecnica": "",
-        "obs": ""
-      },
-      {
-        "nome": "Panturrilha em pé",
-        "series": "3",
-        "reps": "12",
-        "tecnica": "",
-        "obs": ""
-      }
-    ]
-  },
-  {
-    "dia": "DIA 8 – OMBROS + CORE",
-    "tecnica": "Execução controlada + volume moderado",
-    "objetivo": "Hipertrofia progressiva e segura para iniciantes",
-    "exercicios": [
-      {
-        "nome": "Desenvolvimento halteres",
-        "series": "3",
-        "reps": "12",
-        "tecnica": "",
-        "obs": ""
-      },
-      {
-        "nome": "Elevação lateral",
-        "series": "3",
-        "reps": "12",
-        "tecnica": "",
-        "obs": ""
-      },
-      {
-        "nome": "Prancha frontal",
-        "series": "3",
-        "reps": "12",
-        "tecnica": "",
-        "obs": ""
-      },
-      {
-        "nome": "Abdominal bicicleta",
-        "series": "3",
-        "reps": "12",
-        "tecnica": "",
-        "obs": ""
-      }
-    ]
-  },
-  {
-    "dia": "DIA 9 – PEITO + TRÍCEPS",
-    "tecnica": "Execução controlada + volume moderado",
-    "objetivo": "Hipertrofia progressiva e segura para iniciantes",
-    "exercicios": [
-      {
-        "nome": "Supino reto com barra",
-        "series": "3",
-        "reps": "12",
-        "tecnica": "Cadência 2-1-2",
-        "obs": ""
-      },
-      {
-        "nome": "Crucifixo inclinado",
-        "series": "3",
-        "reps": "12",
-        "tecnica": "",
-        "obs": ""
-      },
-      {
-        "nome": "Tríceps pulley",
-        "series": "3",
-        "reps": "12",
-        "tecnica": "",
-        "obs": ""
-      },
-      {
-        "nome": "Mergulho em banco",
-        "series": "3",
-        "reps": "12",
-        "tecnica": "",
-        "obs": ""
-      }
-    ]
-  },
-  {
-    "dia": "DIA 10 – COSTAS + BÍCEPS",
-    "tecnica": "Execução controlada + volume moderado",
-    "objetivo": "Hipertrofia progressiva e segura para iniciantes",
-    "exercicios": [
-      {
-        "nome": "Puxada frontal",
-        "series": "3",
-        "reps": "12",
-        "tecnica": "",
-        "obs": ""
-      },
-      {
-        "nome": "Remada baixa",
-        "series": "3",
-        "reps": "12",
-        "tecnica": "",
-        "obs": ""
-      },
-      {
-        "nome": "Rosca direta com barra",
-        "series": "3",
-        "reps": "12",
-        "tecnica": "",
-        "obs": ""
-      },
-      {
-        "nome": "Rosca alternada",
-        "series": "3",
-        "reps": "12",
-        "tecnica": "",
-        "obs": ""
-      }
-    ]
-  },
-  {
-    "dia": "DIA 11 – PERNAS",
-    "tecnica": "Execução controlada + volume moderado",
-    "objetivo": "Hipertrofia progressiva e segura para iniciantes",
-    "exercicios": [
-      {
-        "nome": "Agachamento livre",
-        "series": "3",
-        "reps": "12",
-        "tecnica": "Cadência 2-1-2",
-        "obs": ""
-      },
-      {
-        "nome": "Cadeira extensora",
-        "series": "3",
-        "reps": "12",
-        "tecnica": "",
-        "obs": ""
-      },
-      {
-        "nome": "Mesa flexora",
-        "series": "3",
-        "reps": "12",
-        "tecnica": "",
-        "obs": ""
-      },
-      {
-        "nome": "Panturrilha em pé",
-        "series": "3",
-        "reps": "12",
-        "tecnica": "",
-        "obs": ""
-      }
-    ]
-  },
-  {
-    "dia": "DIA 12 – OMBROS + CORE",
-    "tecnica": "Execução controlada + volume moderado",
-    "objetivo": "Hipertrofia progressiva e segura para iniciantes",
-    "exercicios": [
-      {
-        "nome": "Desenvolvimento halteres",
-        "series": "3",
-        "reps": "12",
-        "tecnica": "",
-        "obs": ""
-      },
-      {
-        "nome": "Elevação lateral",
-        "series": "3",
-        "reps": "12",
-        "tecnica": "",
-        "obs": ""
-      },
-      {
-        "nome": "Prancha frontal",
-        "series": "3",
-        "reps": "12",
-        "tecnica": "",
-        "obs": ""
-      },
-      {
-        "nome": "Abdominal bicicleta",
-        "series": "3",
-        "reps": "12",
-        "tecnica": "",
-        "obs": ""
-      }
-    ]
-  },
-  {
-    "dia": "DIA 13 – PEITO + TRÍCEPS",
-    "tecnica": "Execução controlada + volume moderado",
-    "objetivo": "Hipertrofia progressiva e segura para iniciantes",
-    "exercicios": [
-      {
-        "nome": "Supino reto com barra",
-        "series": "3",
-        "reps": "12",
-        "tecnica": "Cadência 2-1-2",
-        "obs": ""
-      },
-      {
-        "nome": "Crucifixo inclinado",
-        "series": "3",
-        "reps": "12",
-        "tecnica": "",
-        "obs": ""
-      },
-      {
-        "nome": "Tríceps pulley",
-        "series": "3",
-        "reps": "12",
-        "tecnica": "",
-        "obs": ""
-      },
-      {
-        "nome": "Mergulho em banco",
-        "series": "3",
-        "reps": "12",
-        "tecnica": "",
-        "obs": ""
-      }
-    ]
-  },
-  {
-    "dia": "DIA 14 – COSTAS + BÍCEPS",
-    "tecnica": "Execução controlada + volume moderado",
-    "objetivo": "Hipertrofia progressiva e segura para iniciantes",
-    "exercicios": [
-      {
-        "nome": "Puxada frontal",
-        "series": "3",
-        "reps": "12",
-        "tecnica": "",
-        "obs": ""
-      },
-      {
-        "nome": "Remada baixa",
-        "series": "3",
-        "reps": "12",
-        "tecnica": "",
-        "obs": ""
-      },
-      {
-        "nome": "Rosca direta com barra",
-        "series": "3",
-        "reps": "12",
-        "tecnica": "",
-        "obs": ""
-      },
-      {
-        "nome": "Rosca alternada",
-        "series": "3",
-        "reps": "12",
-        "tecnica": "",
-        "obs": ""
-      }
+      { "nome": "Desenvolvimento militar (halteres)", "series": "4", "reps": "6–8", "tecnica": "", "obs": "" },
+      { "nome": "Elevação lateral", "series": "3", "reps": "10–12", "tecnica": "2s excêntrico", "obs": "" },
+      { "nome": "Elevação frontal alternada", "series": "3", "reps": "10–12", "tecnica": "", "obs": "" },
+      { "nome": "Remada alta ou face pull", "series": "3", "reps": "12–15", "tecnica": "", "obs": "" },
+      { "nome": "Prancha lateral", "series": "3", "reps": "30–45s cada lado", "tecnica": "", "obs": "Core" },
+      { "nome": "Ab wheel / crunch", "series": "3", "reps": "12–15", "tecnica": "", "obs": "" }
     ]
   }
 ];
@@ -596,6 +202,7 @@ document.getElementById("salvarFeedback").addEventListener("click", () => {
 document.getElementById("darkToggle")?.addEventListener("click", () => {
   document.body.classList.toggle("dark-mode");
 });
+
 
 
 
