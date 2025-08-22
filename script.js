@@ -1,85 +1,95 @@
-const treino = [
+const treinos = [
   {
-    dia: "DIA 1 – FULL BODY A",
-    objetivo: "Gasto calórico e grandes grupamentos",
-    tecnica: "Cadência controlada 2–0–2",
-    exercicios: [
-      { nome: "Agachamento livre", series: 4, repeticoes: "10" },
-      { nome: "Supino reto com halteres", series: 4, repeticoes: "12" },
-      { nome: "Remada curvada barra", series: 4, repeticoes: "12" },
-      { nome: "Desenvolvimento militar", series: 3, repeticoes: "12" },
-      { nome: "Prancha com elevação alternada de perna", series: 3, tempo: "30s" }
+    "dia": "DIA 1 – PEITO + TRÍCEPS + CORE (corrida fácil 22–30min)",
+    "tecnica": "Execução controlada, compostos pesados no início, corrida leve ao final",
+    "objetivo": "Hipertrofia, força e estímulo aeróbico leve",
+    "corrida": {
+      "aquecimento": "5min caminhada rápida",
+      "bloco": [
+        { "semanas": "9–10", "protocolo": "Corrida contínua 22–26min" },
+        { "semanas": "11–12", "protocolo": "Corrida contínua 26–30min" }
+      ],
+      "desaquecimento": "5min caminhada leve"
+    },
+    "exercicios": [
+      { "nome": "Supino reto com barra", "series": "4", "reps": "5–6", "tecnica": "Força, cadência 2-0-1", "obs": "Descanso 2–3 min" },
+      { "nome": "Supino inclinado halteres", "series": "3", "reps": "8–10", "tecnica": "", "obs": "" },
+      { "nome": "Crossover (polia alta)", "series": "3", "reps": "12–15", "tecnica": "Superset com tríceps", "obs": "" },
+      { "nome": "Tríceps francês (halteres)", "series": "3", "reps": "10–12", "tecnica": "", "obs": "" },
+      { "nome": "Tríceps testa barra W", "series": "3", "reps": "8–10", "tecnica": "", "obs": "" },
+      { "nome": "Prancha frontal com apoio alternado", "series": "3", "reps": "40–60s", "tecnica": "", "obs": "Core" }
     ]
   },
   {
-    dia: "DIA 2 – INFERIORES + CORE",
-    objetivo: "Foco em quadríceps, glúteos e core",
-    tecnica: "Drop-set no último exercício",
-    exercicios: [
-      { nome: "Leg Press 45°", series: 4, repeticoes: "12" },
-      { nome: "Cadeira extensora", series: 4, repeticoes: "15 (drop-set na última)" },
-      { nome: "Stiff com halteres", series: 4, repeticoes: "10" },
-      { nome: "Abdominal infra em banco declinado", series: 3, repeticoes: "15" },
-      { nome: "Prancha lateral", series: 3, tempo: "30s por lado" }
+    "dia": "DIA 2 – PERNAS (ênfase quadríceps)",
+    "tecnica": "Execução controlada, amplitude total",
+    "objetivo": "Força e hipertrofia com foco em quadríceps",
+    "exercicios": [
+      { "nome": "Agachamento livre", "series": "4", "reps": "6–8", "tecnica": "Cadência 2-0-1", "obs": "Descanso 2 min" },
+      { "nome": "Hack machine", "series": "3", "reps": "8–10", "tecnica": "", "obs": "" },
+      { "nome": "Leg press 45°", "series": "3", "reps": "12–15", "tecnica": "", "obs": "" },
+      { "nome": "Avanço com barra", "series": "3", "reps": "10–12 passos", "tecnica": "", "obs": "" },
+      { "nome": "Cadeira extensora", "series": "3", "reps": "12–15", "tecnica": "Drop-set na última série", "obs": "" },
+      { "nome": "Abdominal infra", "series": "3", "reps": "15–20", "tecnica": "", "obs": "" }
     ]
   },
   {
-    dia: "DIA 3 – CORRIDA",
-    objetivo: "Evolução cardiovascular e emagrecimento",
-    tecnica: "Minutagem progressiva",
-    corrida: {
-      aquecimento: "5min caminhada rápida",
-      blocoPrincipal: "1min30 corrida leve + 2min caminhada (x8) → total 28min",
-      desaquecimento: "5min caminhada leve"
-    }
-  },
-  {
-    dia: "DIA 4 – SUPERIORES",
-    objetivo: "Postura, deltoides e estabilidade escapular",
-    tecnica: "Bi-set em bíceps + tríceps",
-    exercicios: [
-      { nome: "Supino inclinado barra", series: 4, repeticoes: "10" },
-      { nome: "Puxada aberta frente", series: 4, repeticoes: "12" },
-      { nome: "Rosca direta halteres", series: 3, repeticoes: "12 (bi-set com Tríceps francês)" },
-      { nome: "Tríceps francês", series: 3, repeticoes: "12" },
-      { nome: "Elevação lateral halteres", series: 3, repeticoes: "15" },
-      { nome: "Face pull (cabo ou elástico)", series: 3, repeticoes: "15" }
+    "dia": "DIA 3 – COSTAS + BÍCEPS (corrida intervalada 28–32min)",
+    "tecnica": "Execução firme, corrida intervalada após treino",
+    "objetivo": "Força de dorsais e resistência aeróbica",
+    "corrida": {
+      "aquecimento": "5min caminhada rápida",
+      "bloco": [
+        { "semanas": "9–10", "protocolo": "3min corrida + 1min caminhada x7 (28min total)" },
+        { "semanas": "11–12", "protocolo": "4min corrida + 1min caminhada x6 (30min total)" }
+      ],
+      "desaquecimento": "5min caminhada leve"
+    },
+    "exercicios": [
+      { "nome": "Barra fixa (assistida se necessário)", "series": "4", "reps": "6–8", "tecnica": "", "obs": "" },
+      { "nome": "Remada curvada", "series": "4", "reps": "8–10", "tecnica": "", "obs": "" },
+      { "nome": "Remada unilateral com halter", "series": "3", "reps": "10–12", "tecnica": "", "obs": "" },
+      { "nome": "Pulldown supinado", "series": "3", "reps": "12–15", "tecnica": "", "obs": "" },
+      { "nome": "Rosca direta barra reta", "series": "3", "reps": "8–10", "tecnica": "", "obs": "" },
+      { "nome": "Rosca alternada", "series": "2", "reps": "10–12", "tecnica": "", "obs": "" }
     ]
   },
   {
-    dia: "DIA 5 – CORRIDA",
-    objetivo: "Queima calórica e resistência",
-    tecnica: "Controle respiratório (ritmo conversável)",
-    corrida: {
-      aquecimento: "5min caminhada rápida",
-      blocoPrincipal: "1min30 corrida leve + 2min caminhada (x8) → total 28min",
-      desaquecimento: "5min caminhada leve"
-    }
-  },
-  {
-    dia: "DIA 6 – FULL BODY METABÓLICO",
-    objetivo: "Resistência e gasto calórico",
-    tecnica: "Circuito metabólico 4 voltas",
-    circuito: [
-      { nome: "Agachamento com halteres", repeticoes: "15" },
-      { nome: "Flexão de braço", repeticoes: "12" },
-      { nome: "Afundo alternado", repeticoes: "12 cada perna" },
-      { nome: "Remada baixa cabo", repeticoes: "12" },
-      { nome: "Elevação pélvica", repeticoes: "15" },
-      { nome: "Abdominal bicicleta", repeticoes: "20" }
+    "dia": "DIA 4 – PERNAS (ênfase posterior + glúteo)",
+    "tecnica": "Amplitude máxima, foco em glúteo/ischios",
+    "objetivo": "Fortalecimento posterior e glúteo",
+    "exercicios": [
+      { "nome": "Levantamento terra romeno", "series": "4", "reps": "6–8", "tecnica": "", "obs": "" },
+      { "nome": "Agachamento búlgaro", "series": "3", "reps": "10–12 por perna", "tecnica": "", "obs": "" },
+      { "nome": "Cadeira flexora", "series": "3", "reps": "10–12", "tecnica": "", "obs": "" },
+      { "nome": "Glúteo na polia / caneleira", "series": "3", "reps": "12–15", "tecnica": "", "obs": "" },
+      { "nome": "Hip thrust (barra)", "series": "4", "reps": "8–10", "tecnica": "Pausa 1s no topo", "obs": "" },
+      { "nome": "Panturrilha sentado", "series": "4", "reps": "12–15", "tecnica": "", "obs": "" }
     ]
   },
   {
-    dia: "DIA 7 – DESCANSO ATIVO",
-    objetivo: "Recuperação",
-    tecnica: "Alongamentos e mobilidade",
-    instrucoes: [
-      "Alongar quadríceps e posteriores",
-      "Mobilidade de quadril e tornozelo",
-      "Caminhada leve 20–30min (opcional)"
+    "dia": "DIA 5 – OMBROS + CORE (corrida contínua 32–40min)",
+    "tecnica": "Execução controlada, corrida moderada ao final",
+    "objetivo": "Fortalecimento do core e resistência aeróbica",
+    "corrida": {
+      "aquecimento": "5min caminhada rápida",
+      "bloco": [
+        { "semanas": "9–10", "protocolo": "Corrida contínua 32–36min" },
+        { "semanas": "11–12", "protocolo": "Corrida contínua 36–40min" }
+      ],
+      "desaquecimento": "5min caminhada leve"
+    },
+    "exercicios": [
+      { "nome": "Desenvolvimento Arnold", "series": "4", "reps": "8–10", "tecnica": "", "obs": "" },
+      { "nome": "Elevação lateral", "series": "3", "reps": "12–15", "tecnica": "2s excêntrico", "obs": "" },
+      { "nome": "Elevação frontal", "series": "3", "reps": "10–12", "tecnica": "", "obs": "" },
+      { "nome": "Remada alta", "series": "3", "reps": "10–12", "tecnica": "", "obs": "" },
+      { "nome": "Prancha com toques no ombro", "series": "3", "reps": "40–60s", "tecnica": "", "obs": "Core" },
+      { "nome": "Abdominal bicicleta", "series": "3", "reps": "15–20 cada lado", "tecnica": "", "obs": "" }
     ]
   }
 ];
+
 
 
 
@@ -186,6 +196,7 @@ document.getElementById("salvarFeedback").addEventListener("click", () => {
 document.getElementById("darkToggle")?.addEventListener("click", () => {
   document.body.classList.toggle("dark-mode");
 });
+
 
 
 
