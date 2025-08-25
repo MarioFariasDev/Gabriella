@@ -1,23 +1,18 @@
 const treinos = [
   {
-    "dia": "DIA 1 – PEITO + TRÍCEPS + CORE (corrida fácil 22–30min)",
+    "dia": "DIA 1 – PEITO + TRÍCEPS + CORE + Corrida fácil",
     "tecnica": "Execução controlada, compostos pesados no início, corrida leve ao final",
     "objetivo": "Hipertrofia, força e estímulo aeróbico leve",
-    "corrida": {
-      "aquecimento": "5min caminhada rápida",
-      "bloco": [
-        { "semanas": "9–10", "protocolo": "Corrida contínua 22–26min" },
-        { "semanas": "11–12", "protocolo": "Corrida contínua 26–30min" }
-      ],
-      "desaquecimento": "5min caminhada leve"
-    },
     "exercicios": [
       { "nome": "Supino reto com barra", "series": "4", "reps": "5–6", "tecnica": "Força, cadência 2-0-1", "obs": "Descanso 2–3 min" },
-      { "nome": "Supino inclinado halteres", "series": "3", "reps": "8–10", "tecnica": "", "obs": "" },
-      { "nome": "Crossover (polia alta)", "series": "3", "reps": "12–15", "tecnica": "Superset com tríceps", "obs": "" },
-      { "nome": "Tríceps francês (halteres)", "series": "3", "reps": "10–12", "tecnica": "", "obs": "" },
-      { "nome": "Tríceps testa barra W", "series": "3", "reps": "8–10", "tecnica": "", "obs": "" },
-      { "nome": "Prancha frontal com apoio alternado", "series": "3", "reps": "40–60s", "tecnica": "", "obs": "Core" }
+      { "nome": "Supino inclinado halteres", "series": "3", "reps": "8–10" },
+      { "nome": "Crossover (polia alta)", "series": "3", "reps": "12–15", "tecnica": "Superset com tríceps" },
+      { "nome": "Tríceps francês (halteres)", "series": "3", "reps": "10–12" },
+      { "nome": "Tríceps testa barra W", "series": "3", "reps": "8–10" },
+      { "nome": "Prancha frontal com apoio alternado", "series": "3", "reps": "40–60s", "obs": "Core" },
+      { "nome": "Corrida fácil", "series": "1", "reps": "22–30min", 
+        "tecnica": "Aquecimento 5min caminhada rápida / Desaquecimento 5min leve", 
+        "obs": "Semanas 9–10: 22–26min / Semanas 11–12: 26–30min" }
     ]
   },
   {
@@ -26,32 +21,27 @@ const treinos = [
     "objetivo": "Força e hipertrofia com foco em quadríceps",
     "exercicios": [
       { "nome": "Agachamento livre", "series": "4", "reps": "6–8", "tecnica": "Cadência 2-0-1", "obs": "Descanso 2 min" },
-      { "nome": "Hack machine", "series": "3", "reps": "8–10", "tecnica": "", "obs": "" },
-      { "nome": "Leg press 45°", "series": "3", "reps": "12–15", "tecnica": "", "obs": "" },
-      { "nome": "Avanço com barra", "series": "3", "reps": "10–12 passos", "tecnica": "", "obs": "" },
-      { "nome": "Cadeira extensora", "series": "3", "reps": "12–15", "tecnica": "Drop-set na última série", "obs": "" },
-      { "nome": "Abdominal infra", "series": "3", "reps": "15–20", "tecnica": "", "obs": "" }
+      { "nome": "Hack machine", "series": "3", "reps": "8–10" },
+      { "nome": "Leg press 45°", "series": "3", "reps": "12–15" },
+      { "nome": "Avanço com barra", "series": "3", "reps": "10–12 passos" },
+      { "nome": "Cadeira extensora", "series": "3", "reps": "12–15", "tecnica": "Drop-set na última série" },
+      { "nome": "Abdominal infra", "series": "3", "reps": "15–20" }
     ]
   },
   {
-    "dia": "DIA 3 – COSTAS + BÍCEPS (corrida intervalada 28–32min)",
+    "dia": "DIA 3 – COSTAS + BÍCEPS + Corrida intervalada",
     "tecnica": "Execução firme, corrida intervalada após treino",
     "objetivo": "Força de dorsais e resistência aeróbica",
-    "corrida": {
-      "aquecimento": "5min caminhada rápida",
-      "bloco": [
-        { "semanas": "9–10", "protocolo": "3min corrida + 1min caminhada x7 (28min total)" },
-        { "semanas": "11–12", "protocolo": "4min corrida + 1min caminhada x6 (30min total)" }
-      ],
-      "desaquecimento": "5min caminhada leve"
-    },
     "exercicios": [
-      { "nome": "Barra fixa (assistida se necessário)", "series": "4", "reps": "6–8", "tecnica": "", "obs": "" },
-      { "nome": "Remada curvada", "series": "4", "reps": "8–10", "tecnica": "", "obs": "" },
-      { "nome": "Remada unilateral com halter", "series": "3", "reps": "10–12", "tecnica": "", "obs": "" },
-      { "nome": "Pulldown supinado", "series": "3", "reps": "12–15", "tecnica": "", "obs": "" },
-      { "nome": "Rosca direta barra reta", "series": "3", "reps": "8–10", "tecnica": "", "obs": "" },
-      { "nome": "Rosca alternada", "series": "2", "reps": "10–12", "tecnica": "", "obs": "" }
+      { "nome": "Barra fixa (assistida se necessário)", "series": "4", "reps": "6–8" },
+      { "nome": "Remada curvada", "series": "4", "reps": "8–10" },
+      { "nome": "Remada unilateral com halter", "series": "3", "reps": "10–12" },
+      { "nome": "Pulldown supinado", "series": "3", "reps": "12–15" },
+      { "nome": "Rosca direta barra reta", "series": "3", "reps": "8–10" },
+      { "nome": "Rosca alternada", "series": "2", "reps": "10–12" },
+      { "nome": "Corrida intervalada", "series": "1", "reps": "28–32min", 
+        "tecnica": "Aquecimento 5min / Desaquecimento 5min", 
+        "obs": "Semanas 9–10: 3min corrida + 1min caminhada x7 (28min) / Semanas 11–12: 4min corrida + 1min caminhada x6 (30min)" }
     ]
   },
   {
@@ -59,33 +49,28 @@ const treinos = [
     "tecnica": "Amplitude máxima, foco em glúteo/ischios",
     "objetivo": "Fortalecimento posterior e glúteo",
     "exercicios": [
-      { "nome": "Levantamento terra romeno", "series": "4", "reps": "6–8", "tecnica": "", "obs": "" },
-      { "nome": "Agachamento búlgaro", "series": "3", "reps": "10–12 por perna", "tecnica": "", "obs": "" },
-      { "nome": "Cadeira flexora", "series": "3", "reps": "10–12", "tecnica": "", "obs": "" },
-      { "nome": "Glúteo na polia / caneleira", "series": "3", "reps": "12–15", "tecnica": "", "obs": "" },
-      { "nome": "Hip thrust (barra)", "series": "4", "reps": "8–10", "tecnica": "Pausa 1s no topo", "obs": "" },
-      { "nome": "Panturrilha sentado", "series": "4", "reps": "12–15", "tecnica": "", "obs": "" }
+      { "nome": "Levantamento terra romeno", "series": "4", "reps": "6–8" },
+      { "nome": "Agachamento búlgaro", "series": "3", "reps": "10–12 por perna" },
+      { "nome": "Cadeira flexora", "series": "3", "reps": "10–12" },
+      { "nome": "Glúteo na polia / caneleira", "series": "3", "reps": "12–15" },
+      { "nome": "Hip thrust (barra)", "series": "4", "reps": "8–10", "tecnica": "Pausa 1s no topo" },
+      { "nome": "Panturrilha sentado", "series": "4", "reps": "12–15" }
     ]
   },
   {
-    "dia": "DIA 5 – OMBROS + CORE (corrida contínua 32–40min)",
+    "dia": "DIA 5 – OMBROS + CORE + Corrida contínua",
     "tecnica": "Execução controlada, corrida moderada ao final",
     "objetivo": "Fortalecimento do core e resistência aeróbica",
-    "corrida": {
-      "aquecimento": "5min caminhada rápida",
-      "bloco": [
-        { "semanas": "9–10", "protocolo": "Corrida contínua 32–36min" },
-        { "semanas": "11–12", "protocolo": "Corrida contínua 36–40min" }
-      ],
-      "desaquecimento": "5min caminhada leve"
-    },
     "exercicios": [
-      { "nome": "Desenvolvimento Arnold", "series": "4", "reps": "8–10", "tecnica": "", "obs": "" },
-      { "nome": "Elevação lateral", "series": "3", "reps": "12–15", "tecnica": "2s excêntrico", "obs": "" },
-      { "nome": "Elevação frontal", "series": "3", "reps": "10–12", "tecnica": "", "obs": "" },
-      { "nome": "Remada alta", "series": "3", "reps": "10–12", "tecnica": "", "obs": "" },
-      { "nome": "Prancha com toques no ombro", "series": "3", "reps": "40–60s", "tecnica": "", "obs": "Core" },
-      { "nome": "Abdominal bicicleta", "series": "3", "reps": "15–20 cada lado", "tecnica": "", "obs": "" }
+      { "nome": "Desenvolvimento Arnold", "series": "4", "reps": "8–10" },
+      { "nome": "Elevação lateral", "series": "3", "reps": "12–15", "tecnica": "2s excêntrico" },
+      { "nome": "Elevação frontal", "series": "3", "reps": "10–12" },
+      { "nome": "Remada alta", "series": "3", "reps": "10–12" },
+      { "nome": "Prancha com toques no ombro", "series": "3", "reps": "40–60s", "obs": "Core" },
+      { "nome": "Abdominal bicicleta", "series": "3", "reps": "15–20 cada lado" },
+      { "nome": "Corrida contínua", "series": "1", "reps": "32–40min", 
+        "tecnica": "Aquecimento 5min / Desaquecimento 5min", 
+        "obs": "Semanas 9–10: 32–36min / Semanas 11–12: 36–40min" }
     ]
   }
 ];
@@ -196,6 +181,7 @@ document.getElementById("salvarFeedback").addEventListener("click", () => {
 document.getElementById("darkToggle")?.addEventListener("click", () => {
   document.body.classList.toggle("dark-mode");
 });
+
 
 
 
