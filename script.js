@@ -12,7 +12,7 @@ const treinos = [
       { "nome": "Prancha frontal com apoio alternado", "series": "3", "reps": "40–60s", "obs": "Core" },
       { "nome": "Corrida fácil", "series": "1", "reps": "22–30min", 
         "tecnica": "Aquecimento 5min caminhada rápida / Desaquecimento 5min leve", 
-        "obs": "Semanas 9–10: 22–26min / Semanas 11–12: 26–30min" }
+        "obs": "22–26min corrida contínua leve" }
     ]
   },
   {
@@ -41,7 +41,7 @@ const treinos = [
       { "nome": "Rosca alternada", "series": "2", "reps": "10–12" },
       { "nome": "Corrida intervalada", "series": "1", "reps": "28–32min", 
         "tecnica": "Aquecimento 5min / Desaquecimento 5min", 
-        "obs": "Semanas 9–10: 3min corrida + 1min caminhada x7 (28min) / Semanas 11–12: 4min corrida + 1min caminhada x6 (30min)" }
+        "obs": "3min corrida moderada + 1min caminhada x7 (28min total)" }
     ]
   },
   {
@@ -70,7 +70,7 @@ const treinos = [
       { "nome": "Abdominal bicicleta", "series": "3", "reps": "15–20 cada lado" },
       { "nome": "Corrida contínua", "series": "1", "reps": "32–40min", 
         "tecnica": "Aquecimento 5min / Desaquecimento 5min", 
-        "obs": "Semanas 9–10: 32–36min / Semanas 11–12: 36–40min" }
+        "obs": "32–36min corrida contínua leve" }
     ]
   }
 ];
@@ -181,6 +181,7 @@ document.getElementById("salvarFeedback").addEventListener("click", () => {
 document.getElementById("darkToggle")?.addEventListener("click", () => {
   document.body.classList.toggle("dark-mode");
 });
+
 
 
 
