@@ -12,8 +12,7 @@ const treinos = [
       { "nome": "Prancha frontal", "series": "3x40–60s", "descricao": "Core" },
 
       // Corrida em formato igual exercício
-      { "nome": "Corrida leve – Semanas 9–10", "series": "1x32–36min", "descricao": "5min aquecimento + corrida leve 22–26min (ritmo conversacional) + 5min desaquecimento" },
-      { "nome": "Corrida leve – Semanas 11–12", "series": "1x36–40min", "descricao": "5min aquecimento + corrida leve 26–30min mantendo cadência estável + 5min desaquecimento" }
+      { "nome": "Corrida leve", "series": "36–40min", "descricao": "5min aquecimento + 5min desaquecimento" }
     ]
   },
   {
@@ -28,8 +27,7 @@ const treinos = [
       { "nome": "Rosca direta barra W", "series": "3x8–10", "descricao": "Execução controlada" },
       { "nome": "Rosca martelo", "series": "2x10–12", "descricao": "Amplitude completa" },
 
-      { "nome": "Corrida intervalada – Semanas 9–10", "series": "1x28min", "descricao": "5min aquecimento + 3min corrida moderada + 1min caminhada (7x) + 5min desaquecimento" },
-      { "nome": "Corrida intervalada – Semanas 11–12", "series": "1x30min", "descricao": "5min aquecimento + 4min corrida forte + 1min caminhada (6x) + 5min desaquecimento" }
+      { "nome": "Corrida intervalada", "series": "4min corrida forte + 1min caminhada (6x)", "descricao": "5min aquecimento + 5min desaquecimento" }
     ]
   },
   {
@@ -57,8 +55,7 @@ const treinos = [
       { "nome": "Prancha com toques no ombro", "series": "3x40–60s", "descricao": "Estabilidade do core" },
       { "nome": "Abdominal bicicleta", "series": "3x15–20", "descricao": "Alternando lados" },
 
-      { "nome": "Corrida contínua – Semanas 9–10", "series": "1x40–44min", "descricao": "5min aquecimento + corrida moderada 32–36min + 5min desaquecimento" },
-      { "nome": "Corrida contínua – Semanas 11–12", "series": "1x44–48min", "descricao": "5min aquecimento + corrida moderada 36–40min + 5min desaquecimento" }
+      { "nome": "Corrida contínua", "series": "44–48min", "descricao": "5min aquecimento + 5min desaquecimento" }
     ]
   },
   {
@@ -73,8 +70,7 @@ const treinos = [
       { "nome": "Glúteo 4 apoios", "series": "3x12–15", "descricao": "Amplitude máxima" },
       { "nome": "Abdominal infra", "series": "3x15–20", "descricao": "Controle lombar" },
 
-      { "nome": "Corrida regenerativa – Semanas 9–10", "series": "1x28–30min", "descricao": "5min aquecimento + corrida leve 20min (ritmo solto) + 3–5min desaquecimento" },
-      { "nome": "Corrida regenerativa – Semanas 11–12", "series": "1x32–34min", "descricao": "5min aquecimento + corrida leve 24min (bem solto) + 3–5min desaquecimento" }
+      { "nome": "Corrida regenerativa", "series": "corrida leve 24mi", "descricao": "5min aquecimento + 3–5min desaquecimento" }
     ]
   }
 ];
@@ -184,6 +180,7 @@ document.getElementById("salvarFeedback").addEventListener("click", () => {
 document.getElementById("darkToggle")?.addEventListener("click", () => {
   document.body.classList.toggle("dark-mode");
 });
+
 
 
 
