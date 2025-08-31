@@ -1,37 +1,30 @@
 const treinos = [
   {
-    "dia": "DIA 1 – PEITO + TRÍCEPS + CORE + Corrida fácil",
-    "tecnica": "Execução controlada, compostos pesados no início, corrida leve ao final",
-    "objetivo": "Hipertrofia, força e estímulo aeróbico leve",
-    "exercicios": [
-      { "nome": "Supino reto com barra", "series": "4", "reps": "5–6", "tecnica": "Força, cadência 2-0-1", "obs": "Descanso 2–3 min" },
-      { "nome": "Supino inclinado halteres", "series": "3", "reps": "8–10" },
-      { "nome": "Crossover (polia alta)", "series": "3", "reps": "12–15", "tecnica": "Superset com tríceps" },
-      { "nome": "Tríceps francês (halteres)", "series": "3", "reps": "10–12" },
-      { "nome": "Tríceps testa barra W", "series": "3", "reps": "8–10" },
-      { "nome": "Prancha frontal com apoio alternado", "series": "3", "reps": "40–60s", "obs": "Core" },
-      { "nome": "Corrida fácil", "series": "1", "reps": "22–30min", 
-        "tecnica": "Aquecimento 5min caminhada rápida / Desaquecimento 5min leve", 
-        "obs": "22–26min corrida contínua leve" }
-    ]
-  },
-  {
-    "dia": "DIA 2 – PERNAS (ênfase quadríceps)",
-    "tecnica": "Execução controlada, amplitude total",
-    "objetivo": "Força e hipertrofia com foco em quadríceps",
+    "dia": "DIA 1 – PERNAS (ênfase quadríceps) + Corrida fácil",
+    "tecnica": "Amplitude máxima nos movimentos, cadência controlada e finalização com corrida leve.",
+    "objetivo": "Força e hipertrofia em quadríceps + estímulo aeróbico leve",
     "exercicios": [
       { "nome": "Agachamento livre", "series": "4", "reps": "6–8", "tecnica": "Cadência 2-0-1", "obs": "Descanso 2 min" },
       { "nome": "Hack machine", "series": "3", "reps": "8–10" },
       { "nome": "Leg press 45°", "series": "3", "reps": "12–15" },
       { "nome": "Avanço com barra", "series": "3", "reps": "10–12 passos" },
       { "nome": "Cadeira extensora", "series": "3", "reps": "12–15", "tecnica": "Drop-set na última série" },
-      { "nome": "Abdominal infra", "series": "3", "reps": "15–20" }
+      { "nome": "Abdominal infra", "series": "3", "reps": "15–20" },
+      { 
+        "nome": "Corrida contínua leve",
+        "aquecimento": "5min caminhada rápida",
+        "semanas": {
+          "9–10": "22–26min em ritmo conversacional (60–65% FCmáx)",
+          "11–12": "26–30min em mesmo ritmo, mantendo constância"
+        },
+        "desaquecimento": "5min caminhada leve"
+      }
     ]
   },
   {
-    "dia": "DIA 3 – COSTAS + BÍCEPS + Corrida intervalada",
-    "tecnica": "Execução firme, corrida intervalada após treino",
-    "objetivo": "Força de dorsais e resistência aeróbica",
+    "dia": "DIA 2 – COSTAS + BÍCEPS + Corrida intervalada",
+    "tecnica": "Execução firme na musculação, corrida intervalada ao final.",
+    "objetivo": "Força em dorsais e resistência aeróbica",
     "exercicios": [
       { "nome": "Barra fixa (assistida se necessário)", "series": "4", "reps": "6–8" },
       { "nome": "Remada curvada", "series": "4", "reps": "8–10" },
@@ -39,15 +32,21 @@ const treinos = [
       { "nome": "Pulldown supinado", "series": "3", "reps": "12–15" },
       { "nome": "Rosca direta barra reta", "series": "3", "reps": "8–10" },
       { "nome": "Rosca alternada", "series": "2", "reps": "10–12" },
-      { "nome": "Corrida intervalada", "series": "1", "reps": "28–32min", 
-        "tecnica": "Aquecimento 5min / Desaquecimento 5min", 
-        "obs": "3min corrida moderada + 1min caminhada x7 (28min total)" }
+      { 
+        "nome": "Corrida intervalada",
+        "aquecimento": "5min caminhada rápida + 2min trote leve",
+        "semanas": {
+          "9–10": "3min corrida moderada (70–75% FCmáx) + 1min caminhada ativa x7 (28min total)",
+          "11–12": "4min corrida moderada a forte (75–80% FCmáx) + 1min caminhada ativa x6 (30min total)"
+        },
+        "desaquecimento": "5min caminhada leve"
+      }
     ]
   },
   {
-    "dia": "DIA 4 – PERNAS (ênfase posterior + glúteo)",
-    "tecnica": "Amplitude máxima, foco em glúteo/ischios",
-    "objetivo": "Fortalecimento posterior e glúteo",
+    "dia": "DIA 3 – PERNAS (ênfase posterior + glúteo)",
+    "tecnica": "Amplitude máxima e cadência lenta, foco em glúteos e posteriores.",
+    "objetivo": "Fortalecimento posterior + glúteos",
     "exercicios": [
       { "nome": "Levantamento terra romeno", "series": "4", "reps": "6–8" },
       { "nome": "Agachamento búlgaro", "series": "3", "reps": "10–12 por perna" },
@@ -58,9 +57,9 @@ const treinos = [
     ]
   },
   {
-    "dia": "DIA 5 – OMBROS + CORE + Corrida contínua",
-    "tecnica": "Execução controlada, corrida moderada ao final",
-    "objetivo": "Fortalecimento do core e resistência aeróbica",
+    "dia": "DIA 4 – OMBROS + CORE + Corrida contínua moderada",
+    "tecnica": "Execução controlada na musculação. Corrida contínua moderada ao final.",
+    "objetivo": "Fortalecimento do core e melhora da resistência aeróbica",
     "exercicios": [
       { "nome": "Desenvolvimento Arnold", "series": "4", "reps": "8–10" },
       { "nome": "Elevação lateral", "series": "3", "reps": "12–15", "tecnica": "2s excêntrico" },
@@ -68,9 +67,15 @@ const treinos = [
       { "nome": "Remada alta", "series": "3", "reps": "10–12" },
       { "nome": "Prancha com toques no ombro", "series": "3", "reps": "40–60s", "obs": "Core" },
       { "nome": "Abdominal bicicleta", "series": "3", "reps": "15–20 cada lado" },
-      { "nome": "Corrida contínua", "series": "1", "reps": "32–40min", 
-        "tecnica": "Aquecimento 5min / Desaquecimento 5min", 
-        "obs": "32–36min corrida contínua leve" }
+      { 
+        "nome": "Corrida contínua moderada",
+        "aquecimento": "5min caminhada rápida + 3min trote leve",
+        "semanas": {
+          "9–10": "32–36min em 70–75% FCmáx (respiração ritmada, não muito ofegante)",
+          "11–12": "36–40min na mesma intensidade, mantendo regularidade do pace"
+        },
+        "desaquecimento": "5min caminhada leve + alongamento"
+      }
     ]
   }
 ];
@@ -181,6 +186,7 @@ document.getElementById("salvarFeedback").addEventListener("click", () => {
 document.getElementById("darkToggle")?.addEventListener("click", () => {
   document.body.classList.toggle("dark-mode");
 });
+
 
 
 
