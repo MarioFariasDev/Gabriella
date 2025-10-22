@@ -1,79 +1,82 @@
 const treinos = [
   {
-    "dia": "DIA 1 – PERNAS (ênfase quadríceps + core) + corrida leve",
-    "tecnica": "Trabalhar força e volume em quadríceps com movimentos amplos e controlados. Finalizar com corrida leve para aumentar resistência.",
-    "objetivo": "Hipertrofia de quadríceps + resistência aeróbica leve",
+    "dia": "DIA 1 – PERNAS (ênfase posterior + glúteos)",
+    "tecnica": "Cadência lenta e foco no glúteo e posteriores. Pausa no pico da contração para ativação máxima.",
+    "objetivo": "Força e tônus em glúteos e posteriores de coxa",
     "exercicios": [
-      { "nome": "Agachamento livre", "series": "4x6–8", "descricao": "Força, cadência 2-0-1, descanso 2min" },
-      { "nome": "Leg press 45°", "series": "4x10–12", "descricao": "Amplitude máxima" },
-      { "nome": "Hack machine", "series": "3x8–10", "descricao": "Descida lenta (3s)" },
-      { "nome": "Avanço com halteres", "series": "3x12 passos por perna", "descricao": "Controle no passo" },
-      { "nome": "Cadeira extensora", "series": "3x12–15", "descricao": "Drop-set na última série" },
-      { "nome": "Prancha frontal", "series": "3x40–60s", "descricao": "Core" },
-
-      // Corrida em formato igual exercício
-      { "nome": "Corrida leve", "series": "36–40min", "descricao": "5min aquecimento + 5min desaquecimento" }
+      { "nome": "Stiff RDL com halteres/barra", "series": "4x10", "reps": "10", "tecnica": "Cadência 2-1-1", "obs": "Foco em alongar posterior", "descanso": "60s" },
+      { "nome": "Agachamento Sumô", "series": "4x12", "reps": "12", "tecnica": "Amplitude máxima", "obs": "Pés abertos, foco em glúteo", "descanso": "60s" },
+      { "nome": "Cadeira flexora", "series": "3x12", "reps": "12", "tecnica": "1s de contração no topo", "obs": "-", "descanso": "45s" },
+      { "nome": "Elevação pélvica (Hip Thrust)", "series": "4x12", "reps": "12", "tecnica": "Pausa 1s no topo", "obs": "Usar carga progressiva", "descanso": "60s" },
+      { "nome": "Cadeira abdutora", "series": "3x15", "reps": "15", "tecnica": "Tempo constante", "obs": "Foco em glúteo médio", "descanso": "45s" },
+      { "nome": "Panturrilhas em pé", "series": "4x15", "reps": "15", "tecnica": "Isometria 2s topo", "obs": "-", "descanso": "30s" }
     ]
   },
   {
-    "dia": "DIA 2 – COSTAS + BÍCEPS + corrida intervalada",
-    "tecnica": "Exercícios de dorsais e bíceps, finalizando com corrida intervalada para estimular condicionamento.",
-    "objetivo": "Fortalecimento de costas + estímulo cardiovascular",
+    "dia": "DIA 2 – CORRIDA LEVE + CORE",
+    "tecnica": "Ritmo confortável, mantendo constância. Foco em queima de gordura e estabilidade do core.",
+    "objetivo": "Melhorar resistência aeróbica e fortalecer abdômen",
     "exercicios": [
-      { "nome": "Barra fixa", "series": "4x6–8", "descricao": "Assistida se necessário" },
-      { "nome": "Remada curvada", "series": "4x8–10", "descricao": "Pegada pronada" },
-      { "nome": "Remada unilateral", "series": "3x10–12", "descricao": "Estabilizar tronco" },
-      { "nome": "Pulldown neutro", "series": "3x12–15", "descricao": "Contração máxima" },
-      { "nome": "Rosca direta barra W", "series": "3x8–10", "descricao": "Execução controlada" },
-      { "nome": "Rosca martelo", "series": "2x10–12", "descricao": "Amplitude completa" },
-
-      { "nome": "Corrida intervalada", "series": "4min corrida forte + 1min caminhada (6x)", "descricao": "5min aquecimento + 5min desaquecimento" }
+      { "nome": "Corrida leve", "series": "5km", "reps": "-", "tecnica": "30–35min ritmo leve", "obs": "5min aquecimento + 5min desaquecimento", "descanso": "-" },
+      { "nome": "Prancha frontal", "series": "3x40s", "reps": "-", "tecnica": "Core ativado", "obs": "-", "descanso": "30s" },
+      { "nome": "Prancha lateral", "series": "3x30s", "reps": "cada lado", "tecnica": "-", "obs": "-", "descanso": "30s" },
+      { "nome": "Abdominal infra", "series": "3x15", "reps": "15", "tecnica": "-", "obs": "-", "descanso": "30s" },
+      { "nome": "Elevação de pernas", "series": "3x12", "reps": "12", "tecnica": "Controle na descida", "obs": "-", "descanso": "30s" }
     ]
   },
   {
-    "dia": "DIA 3 – PERNAS (ênfase posterior + glúteo)",
-    "tecnica": "Cadência lenta e foco em glúteos/posteriores. Pausa no pico da contração.",
-    "objetivo": "Fortalecimento de glúteos e posteriores",
+    "dia": "DIA 3 – COSTAS + BÍCEPS",
+    "tecnica": "Controle na fase excêntrica e foco em contração máxima. ",
+    "objetivo": "Fortalecer dorso e melhorar postura",
     "exercicios": [
-      { "nome": "Levantamento terra romeno", "series": "4x6–8", "descricao": "Foco em posterior" },
-      { "nome": "Agachamento búlgaro", "series": "3x10–12", "descricao": "Unilateral, controlar descida" },
-      { "nome": "Cadeira flexora", "series": "4x10–12", "descricao": "1s de contração no pico" },
-      { "nome": "Hip thrust", "series": "4x8–10", "descricao": "Pausa de 1s no topo" },
-      { "nome": "Glúteo polia/caneleira", "series": "3x12–15", "descricao": "Controle do movimento" },
-      { "nome": "Panturrilha em pé", "series": "4x12–15", "descricao": "Isometria 2s no topo" }
+      { "nome": "Puxada frontal aberta", "series": "4x10", "reps": "10", "tecnica": "-", "obs": "-", "descanso": "60s" },
+      { "nome": "Remada curvada", "series": "4x10", "reps": "10", "tecnica": "Pegada pronada", "obs": "-", "descanso": "60s" },
+      { "nome": "Remada baixa", "series": "3x12", "reps": "12", "tecnica": "-", "obs": "-", "descanso": "60s" },
+      { "nome": "Rosca direta", "series": "3x12", "reps": "12", "tecnica": "Execução controlada", "obs": "-", "descanso": "45s" },
+      { "nome": "Rosca martelo", "series": "3x12", "reps": "12", "tecnica": "Amplitude completa", "obs": "-", "descanso": "45s" },
+      { "nome": "Elevação lateral ombro", "series": "3x15", "reps": "15", "tecnica": "Descida lenta", "obs": "-", "descanso": "45s" }
     ]
   },
   {
-    "dia": "DIA 4 – OMBROS + CORE + corrida contínua",
-    "tecnica": "Execução controlada nos exercícios de ombro, corrida contínua moderada ao final.",
-    "objetivo": "Definição de ombros + core + resistência aeróbica",
+    "dia": "DIA 4 – CORRIDA INTERVALADA (HIIT)",
+    "tecnica": "Alternância entre sprints e trotes. Eleva o VO₂ e queima gordura.",
+    "objetivo": "Aumentar capacidade cardiorrespiratória",
     "exercicios": [
-      { "nome": "Desenvolvimento Arnold", "series": "4x8–10", "descricao": "Amplitude completa" },
-      { "nome": "Elevação lateral", "series": "4x12–15", "descricao": "Descida lenta (2s)" },
-      { "nome": "Elevação frontal", "series": "3x10–12", "descricao": "Controle na subida" },
-      { "nome": "Remada alta", "series": "3x10–12", "descricao": "Cotovelo acima do ombro" },
-      { "nome": "Prancha com toques no ombro", "series": "3x40–60s", "descricao": "Estabilidade do core" },
-      { "nome": "Abdominal bicicleta", "series": "3x15–20", "descricao": "Alternando lados" },
-
-      { "nome": "Corrida contínua", "series": "44–48min", "descricao": "5min aquecimento + 5min desaquecimento" }
+      { "nome": "Aquecimento", "series": "10min", "reps": "-", "tecnica": "Trote leve", "obs": "-", "descanso": "-" },
+      { "nome": "Tiro forte", "series": "1min", "reps": "6x", "tecnica": "Velocidade alta", "obs": "Alternar com descanso ativo", "descanso": "1min leve" },
+      { "nome": "Corrida leve", "series": "10min", "reps": "-", "tecnica": "Desaquecimento", "obs": "-", "descanso": "-" },
+      { "nome": "Caminhada final", "series": "5min", "reps": "-", "tecnica": "-", "obs": "Alongamento pós", "descanso": "-" }
     ]
   },
   {
-    "dia": "DIA 5 – PERNAS (misto quadríceps + glúteo) + corrida regenerativa",
-    "tecnica": "Volume moderado, ênfase estética e pump. Corrida regenerativa leve ao final.",
-    "objetivo": "Equilibrar quadríceps e glúteo + melhorar condicionamento",
+    "dia": "DIA 5 – PERNAS (ênfase quadríceps + glúteos)",
+    "tecnica": "Movimentos amplos e controlados. Alternar carga e volume para estímulo completo.",
+    "objetivo": "Hipertrofia de quadríceps e glúteos",
     "exercicios": [
-      { "nome": "Leg press pés altos", "series": "4x10–12", "descricao": "Ênfase em glúteo/posterior" },
-      { "nome": "Passada lateral miniband", "series": "3x12–15", "descricao": "Ativação de glúteo médio" },
-      { "nome": "Agachamento sumô halter", "series": "3x12–15", "descricao": "Controle de cadência" },
-      { "nome": "Cadeira extensora", "series": "3x15–20", "descricao": "Pump de quadríceps" },
-      { "nome": "Glúteo 4 apoios", "series": "3x12–15", "descricao": "Amplitude máxima" },
-      { "nome": "Abdominal infra", "series": "3x15–20", "descricao": "Controle lombar" },
-
-      { "nome": "Corrida regenerativa", "series": "corrida leve 24mi", "descricao": "5min aquecimento + 3–5min desaquecimento" }
+      { "nome": "Agachamento livre", "series": "4x10", "reps": "10", "tecnica": "Cadência 2-0-1", "obs": "-", "descanso": "60s" },
+      { "nome": "Leg press", "series": "4x12", "reps": "12", "tecnica": "Amplitude total", "obs": "-", "descanso": "60s" },
+      { "nome": "Cadeira extensora", "series": "3x15", "reps": "15", "tecnica": "Drop-set na última", "obs": "-", "descanso": "45s" },
+      { "nome": "Passada com halteres", "series": "3x10", "reps": "cada perna", "tecnica": "-", "obs": "-", "descanso": "60s" },
+      { "nome": "Glúteo kickback (caneleira/cabo)", "series": "3x15", "reps": "15", "tecnica": "Controle total", "obs": "-", "descanso": "45s" },
+      { "nome": "Panturrilha sentado", "series": "4x15", "reps": "15", "tecnica": "Isometria topo 2s", "obs": "-", "descanso": "30s" }
+    ]
+  },
+  {
+    "dia": "DIA 6 – CORRIDA + FUNCIONAL FULL BODY",
+    "tecnica": "Combinar corrida leve com circuito funcional de corpo inteiro.",
+    "objetivo": "Melhorar condicionamento geral e resistência",
+    "exercicios": [
+      { "nome": "Corrida leve", "series": "4–5km", "reps": "-", "tecnica": "Ritmo regenerativo", "obs": "-", "descanso": "-" },
+      { "nome": "Agachamento com salto", "series": "3x15", "reps": "15", "tecnica": "Explosivo", "obs": "-", "descanso": "30s" },
+      { "nome": "Flexão de braço", "series": "3x12", "reps": "12", "tecnica": "-", "obs": "-", "descanso": "30s" },
+      { "nome": "Abdominal bicicleta", "series": "3x20", "reps": "20", "tecnica": "-", "obs": "-", "descanso": "30s" },
+      { "nome": "Burpee", "series": "3x10", "reps": "10", "tecnica": "-", "obs": "-", "descanso": "30s" },
+      { "nome": "Prancha alta", "series": "3x40s", "reps": "-", "tecnica": "-", "obs": "-", "descanso": "30s" }
     ]
   }
 ];
+
+// O restante do código permanece idêntico (renderização, timer, progresso, feedback, dark mode).
 
 
 
@@ -180,6 +183,7 @@ document.getElementById("salvarFeedback").addEventListener("click", () => {
 document.getElementById("darkToggle")?.addEventListener("click", () => {
   document.body.classList.toggle("dark-mode");
 });
+
 
 
 
